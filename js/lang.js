@@ -46,7 +46,7 @@ const LANGUAGES = {
       currency_kzt: "Qozog'iston tengesi",
 
       // Footer
-      footer_copyright: "© 2025 Valyuta Xatar Boshqaruvi MVP",
+      footer_copyright: "© 2025 Valyuta Xatar Boshqaruvi",
       footer_data_source: "Ma'lumotlar:",
 
       // Recommendations for importers
@@ -162,7 +162,7 @@ const LANGUAGES = {
       currency_kzt: "Казахстанский тенге",
 
       // Footer
-      footer_copyright: "© 2025 Управление валютными рисками MVP",
+      footer_copyright: "© 2025 Управление валютными рисками",
       footer_data_source: "Источник данных:",
 
       // Recommendations for importers
