@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valyuta Kurslari - Grafik</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="description" content="O'zbek tilidagi valyuta kurslari va moliyaviy xatar boshqaruvi uchun grafik tahlillar">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><i class="fas fa-chart-line"></i> ValyutaXavf</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-money-bill-wave"></i> <span data-lang-key="nav_home">Kurslar</span></a></li>
+                    <li><a href="grafik.html" class="active"><i class="fas fa-chart-area"></i> <span data-lang-key="nav_chart">Grafik</span></a></li>
+                    <li><a href="tavsiyalar.html"><i class="fas fa-lightbulb"></i> <span data-lang-key="nav_recommendations">Tavsiyalar</span></a></li>
+                </ul>
+            </nav>
+            <div class="language-switcher">
+                <select class="language-select" id="languageSelect">
+                    <option value="uz">🇺🇿 O'zbek</option>
+                    <option value="ru">🇷🇺 Русский</option>
+                </select>
+            </div>
+            <div class="live-time" id="liveTime"><i class="far fa-clock"></i> <span id="liveTimeText"></span></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="hero">
+                <h2><i class="fas fa-chart-area"></i> <span data-lang-key="title_chart">Haftalik Grafik</span></h2>
+                <p class="hero-subtitle" data-lang-key="subtitle_chart">So'nggi 7 kun ichida valyuta kurslarining o'zgarishi</p>
+                <div class="currency-selector">
+                    <button class="currency-btn active" data-currency="USD"><i class="fas fa-dollar-sign"></i> USD 🇺🇸</button>
+                    <button class="currency-btn" data-currency="EUR"><i class="fas fa-euro-sign"></i> EUR 🇪🇺</button>
+                    <button class="currency-btn" data-currency="RUB"><i class="fas fa-ruble-sign"></i> RUB 🇷🇺</button>
+                    <button class="currency-btn" data-currency="CNY"><i class="fas fa-yen-sign"></i> CNY 🇨🇳</button>
+                    <button class="currency-btn" data-currency="KZT"><i class="fas fa-money-bill-alt"></i> KZT 🇰🇿</button>
+                </div>
+                <div id="loadingIndicator" class="loading"><i class="fas fa-spinner fa-spin"></i> <span data-lang-key="loading">Ma'lumotlar yuklanmoqda...</span></div>
+                <div id="errorMessage" class="error"></div>
+            </section>
+
+            <section class="chart-container">
+                <canvas id="rateChart"></canvas>
+                <div id="chartAnalysis" class="chart-analysis"></div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p data-lang-key="footer_copyright">&copy; 2025 Valyuta Xatar Boshqaruvi MVP</p>
+            <p><span data-lang-key="footer_data_source">Ma'lumotlar:</span> <a href="https://www.exchangerate-api.com" target="_blank"><i class="fas fa-database"></i> ExchangeRate-API</a></p>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/lang.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/chart.js"></script>
+</body>
+</html>
+    

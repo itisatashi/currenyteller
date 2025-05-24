@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valyuta Kurslari va Moliyaviy Xatar Boshqaruvi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="description" content="O'zbek tilidagi valyuta kurslari va moliyaviy xatar boshqaruvi uchun platforma">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><i class="fas fa-chart-line"></i> ValyutaXavf</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active"><i class="fas fa-money-bill-wave"></i> <span data-lang-key="nav_home">Kurslar</span></a></li>
+                    <li><a href="grafik.html"><i class="fas fa-chart-area"></i> <span data-lang-key="nav_chart">Grafik</span></a></li>
+                    <li><a href="tavsiyalar.html"><i class="fas fa-lightbulb"></i> <span data-lang-key="nav_recommendations">Tavsiyalar</span></a></li>
+                </ul>
+            </nav>
+            <div class="language-switcher">
+                <select class="language-select" id="languageSelect">
+                    <option value="uz">O'zbek</option>
+                    <option value="ru">Русский</option>
+                </select>
+            </div>
+            <div class="live-time" id="liveTime"><i class="far fa-clock"></i> <span id="liveTimeText"></span></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="hero">
+                <h2><i class="fas fa-exchange-alt"></i> <span data-lang-key="title_home">Bugungi Kurslar</span></h2>
+                <p class="hero-subtitle" data-lang-key="subtitle_home">O'zbekiston so'miga nisbatan asosiy valyutalar kurslari va ularning xavf darajalari</p>
+                <button id="refreshBtn" class="btn"><i class="fas fa-sync-alt"></i> <span data-lang-key="btn_refresh">Yangilash</span></button>
+                <div id="lastUpdated"><i class="far fa-calendar-alt"></i> <span data-lang-key="last_updated">So'nggi yangilanish:</span> <span id="updateTime"></span></div>
+                <div id="loadingIndicator" class="loading"><i class="fas fa-spinner fa-spin"></i> <span data-lang-key="loading">Ma'lumotlar yuklanmoqda...</span></div>
+                <div id="errorMessage" class="error"></div>
+            </section>
+
+            <section class="currency-cards" id="currencyCards">
+                <!-- Currency cards will be dynamically inserted here -->
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p data-lang-key="footer_copyright">&copy; 2025 Valyuta Xatar Boshqaruvi MVP</p>
+            <p><span data-lang-key="footer_data_source">Ma'lumotlar:</span> <a href="https://www.exchangerate-api.com" target="_blank"><i class="fas fa-database"></i> ExchangeRate-API</a></p>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <template id="currency-card-template">
+        <div class="currency-card">
+            <div class="card-header">
+                <h3 class="currency-name"></h3>
+                <span class="currency-flag"></span>
+            </div>
+            <div class="card-body">
+                <div class="current-rate"></div>
+                <div class="rate-change"></div>
+                <div class="risk-indicator"></div>
+            </div>
+            <div class="card-footer">
+                <a href="grafik.html" class="btn btn-small"><i class="fas fa-chart-line"></i> <span data-lang-key="view_chart">Grafikni Ko'rish</span></a>
+            </div>
+        </div>
+    </template>
+
+    <script src="js/config.js"></script>
+    <script src="js/lang.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
