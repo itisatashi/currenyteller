@@ -5,6 +5,7 @@ O'zbek tilidagi valyuta kurslarini kuzatish va moliyaviy xatarlarni boshqarish b
 ## Loyiha Haqida
 
 Bu loyiha quyidagi valyutalarning UZS (O'zbek so'mi) ga nisbatan kurslarini ko'rsatadi:
+
 - USD (AQSh dollari) 🇺🇸
 - EUR (Yevro) 🇪🇺
 - RUB (Rossiya rubli) 🇷🇺
@@ -37,4 +38,4 @@ Loyiha ExchangeRate-API dan foydalanadi: https://api.exchangerate-api.com/v4/lat
 
 ## Muallif
 
-© 2024 Valyuta Xatar Boshqaruvi MVP
+© 2025 Valyuta Xatar Boshqaruvi MVP
