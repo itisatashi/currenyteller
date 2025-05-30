@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ro'yxatdan o'tish - Valyuta Kurslari va Moliyaviy Xatar Boshqaruvi</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/auth.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <meta
+      name="description"
+      content="O'zbek tilidagi valyuta kurslari va moliyaviy xatar boshqaruvi uchun platforma"
+    />
+  </head>
+  <body class="auth-body">
+    <div class="auth-container">
+      <div class="auth-logo">
+        <a href="landing.html">
+          <i class="fas fa-chart-line"></i>
+          <h1>ValyutaXavf</h1>
+        </a>
+      </div>
+      
+      <div class="language-switcher">
+        <select class="language-select" id="languageSelect">
+          <option value="uz">O'zbek</option>
+          <option value="ru">Русский</option>
+        </select>
+      </div>
+      
+      <div class="auth-card">
+        <div class="auth-form-header">
+          <h2><i class="fas fa-user-plus"></i> <span data-lang-key="register_title">Ro'yxatdan o'tish</span></h2>
+        </div>
+        
+        <form id="registerForm" class="auth-form">
+          <div class="form-row">
+            <div class="form-group">
+              <div class="input-with-icon">
+                <i class="fas fa-user"></i>
+                <input type="text" id="fullName" name="fullName" required placeholder="To'liq ism" />
+              </div>
+              <div class="form-error" id="fullNameError"></div>
+            </div>
+            
+            <div class="form-group">
+              <div class="input-with-icon">
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="email" name="email" required placeholder="Email manzil" />
+              </div>
+              <div class="form-error" id="emailError"></div>
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <div class="input-with-icon">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="password" name="password" required placeholder="Parol" />
+                <button type="button" class="toggle-password" id="togglePassword">
+                  <i class="fas fa-eye"></i>
+                </button>
+              </div>
+              <div class="form-error" id="passwordError"></div>
+            </div>
+            
+            <div class="form-group">
+              <div class="input-with-icon">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Parolni tasdiqlang" />
+                <button type="button" class="toggle-password" id="toggleConfirmPassword">
+                  <i class="fas fa-eye"></i>
+                </button>
+              </div>
+              <div class="form-error" id="confirmPasswordError"></div>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <div class="input-with-icon select-container">
+              <i class="fas fa-user-tag"></i>
+              <select id="userType" name="userType" required>
+                <option value="" disabled selected data-lang-key="select_user_type">Foydalanuvchi turini tanlang</option>
+                <option value="individual" data-lang-key="individual">Jismoniy shaxs</option>
+                <option value="business" data-lang-key="business">Biznes</option>
+                <option value="investor" data-lang-key="investor">Investor</option>
+              </select>
+            </div>
+            <div class="form-error" id="userTypeError"></div>
+          </div>
+          
+          <div class="form-options">
+            <div class="terms-agreement">
+              <input type="checkbox" id="agreeTerms" name="agreeTerms" required />
+              <label for="agreeTerms">
+                <span data-lang-key="agree_terms_1">Men</span>
+                <a href="#" data-lang-key="terms_link">foydalanish shartlari</a>
+                <span data-lang-key="agree_terms_2">va</span>
+                <a href="#" data-lang-key="privacy_link">maxfiylik siyosati</a>
+                <span data-lang-key="agree_terms_3">bilan roziman</span>
+              </label>
+            </div>
+          </div>
+          
+          <button type="submit" class="btn btn-primary btn-full">
+            <span data-lang-key="register_button">Ro'yxatdan o'tish</span>
+          </button>
+          
+          <div class="auth-form-footer">
+            <p>
+              <span data-lang-key="have_account">Hisobingiz bormi?</span>
+              <a href="login.html" data-lang-key="login_link">Tizimga kirish</a>
+            </p>
+          </div>
+        </form>
+        
+        <div class="auth-back-link">
+          <a href="landing.html">
+            <i class="fas fa-arrow-left"></i>
+            <span data-lang-key="back_to_home">Bosh sahifaga qaytish</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/config.js"></script>
+    <script src="js/lang.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/auth.js"></script>
+  </body>
+</html>

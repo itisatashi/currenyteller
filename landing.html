@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ValyutaXavf - Valyuta Kurslari va Moliyaviy Xatar Boshqaruvi</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/landing.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <meta
+      name="description"
+      content="O'zbek tilidagi valyuta kurslari va moliyaviy xatar boshqaruvi uchun platforma"
+    />
+  </head>
+  <body class="landing-body">
+    <!-- Hero Section -->
+    <section class="landing-hero">
+      <div class="landing-overlay"></div>
+      <div class="landing-container">
+        <nav class="landing-nav">
+          <div class="landing-logo">
+            <i class="fas fa-chart-line"></i>
+            <h1>ValyutaXavf</h1>
+          </div>
+          <div class="landing-nav-right">
+            <div class="language-switcher">
+              <select class="language-select" id="languageSelect">
+                <option value="uz">O'zbek</option>
+                <option value="ru">Русский</option>
+              </select>
+            </div>
+            <div class="landing-auth-buttons">
+              <a href="login.html" class="btn btn-outline" data-lang-key="nav_login">Kirish</a>
+              <a href="register.html" class="btn" data-lang-key="register_link">Ro'yxatdan o'tish</a>
+            </div>
+          </div>
+        </nav>
+
+        <div class="landing-hero-content">
+          <h1 data-lang-key="landing_hero_title">Valyuta kurslarini kuzating va moliyaviy xatarlarni boshqaring</h1>
+          <p data-lang-key="landing_hero_subtitle">O'zbekiston so'miga nisbatan asosiy valyutalar kurslari va ularning xavf darajalarini real vaqtda kuzating</p>
+          <div class="landing-cta">
+            <a href="#features" class="btn btn-large" data-lang-key="landing_learn_more">Batafsil ma'lumot</a>
+            <a href="register.html" class="btn btn-large btn-primary" data-lang-key="landing_get_started">Boshlash</a>
+          </div>
+        </div>
+
+        <div class="landing-currency-preview">
+          <div class="landing-currency-card">
+            <div class="card-header">
+              <h3>USD - AQSh dollari</h3>
+              <span class="currency-flag">🇺🇸</span>
+            </div>
+            <div class="card-body">
+              <div class="current-rate">1 USD = 12,345.67 UZS</div>
+              <div class="rate-change up">↗️ 1.2%</div>
+              <div class="risk-indicator">🟡 O'rtacha xavf</div>
+            </div>
+          </div>
+          <div class="landing-currency-card">
+            <div class="card-header">
+              <h3>EUR - Yevro</h3>
+              <span class="currency-flag">🇪🇺</span>
+            </div>
+            <div class="card-body">
+              <div class="current-rate">1 EUR = 13,456.78 UZS</div>
+              <div class="rate-change down">↘️ 0.5%</div>
+              <div class="risk-indicator">🟢 Past xavf</div>
+            </div>
+          </div>
+          <div class="landing-currency-card">
+            <div class="card-header">
+              <h3>RUB - Rossiya rubli</h3>
+              <span class="currency-flag">🇷🇺</span>
+            </div>
+            <div class="card-body">
+              <div class="current-rate">1 RUB = 123.45 UZS</div>
+              <div class="rate-change up">↗️ 2.7%</div>
+              <div class="risk-indicator">🔴 Yuqori xavf</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="landing-features" id="features">
+      <div class="landing-container">
+        <div class="section-header">
+          <h2 data-lang-key="landing_features_title">Asosiy imkoniyatlar</h2>
+          <p data-lang-key="landing_features_subtitle">ValyutaXavf platformasi sizga quyidagi imkoniyatlarni taqdim etadi</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-money-bill-wave"></i>
+            </div>
+            <h3 data-lang-key="feature_rates_title">Joriy valyuta kurslari</h3>
+            <p data-lang-key="feature_rates_desc">Asosiy valyutalarning O'zbek so'miga nisbatan joriy kurslarini real vaqtda kuzating</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-chart-area"></i>
+            </div>
+            <h3 data-lang-key="feature_charts_title">Kurslar o'zgarishi grafikasi</h3>
+            <p data-lang-key="feature_charts_desc">So'nggi 7 kun ichidagi valyuta kurslari o'zgarishini vizual grafiklar orqali tahlil qiling</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <h3 data-lang-key="feature_recommendations_title">Moliyaviy tavsiyalar</h3>
+            <p data-lang-key="feature_recommendations_desc">Valyuta kurslari o'zgarishiga qarab importchilar, eksportchilar va investorlar uchun tavsiyalar oling</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3 data-lang-key="feature_risk_title">Xavf darajasi indikatorlari</h3>
+            <p data-lang-key="feature_risk_desc">Valyuta kurslari o'zgarishiga qarab xavf darajasini baholang va moliyaviy qarorlar qabul qiling</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="landing-how-it-works">
+      <div class="landing-container">
+        <div class="section-header">
+          <h2 data-lang-key="landing_how_title">Qanday ishlaydi</h2>
+          <p data-lang-key="landing_how_subtitle">Platformadan foydalanish juda oson</p>
+        </div>
+
+        <div class="steps-container">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-icon">
+              <i class="fas fa-user-plus"></i>
+            </div>
+            <h3 data-lang-key="step_register_title">Ro'yxatdan o'ting</h3>
+            <p data-lang-key="step_register_desc">Platformadan to'liq foydalanish uchun ro'yxatdan o'ting yoki tizimga kiring</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-icon">
+              <i class="fas fa-desktop"></i>
+            </div>
+            <h3 data-lang-key="step_dashboard_title">Boshqaruv paneliga kiring</h3>
+            <p data-lang-key="step_dashboard_desc">Bosh sahifada joriy valyuta kurslarini va xavf darajalarini ko'ring</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3 data-lang-key="step_analyze_title">Ma'lumotlarni tahlil qiling</h3>
+            <p data-lang-key="step_analyze_desc">Grafiklar va tavsiyalar orqali valyuta kurslarini chuqur tahlil qiling</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <div class="step-icon">
+              <i class="fas fa-hand-holding-usd"></i>
+            </div>
+            <h3 data-lang-key="step_decide_title">Qarorlar qabul qiling</h3>
+            <p data-lang-key="step_decide_desc">Platformadan olgan ma'lumotlar asosida to'g'ri moliyaviy qarorlar qabul qiling</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="landing-cta-section">
+      <div class="landing-container">
+        <div class="cta-content">
+          <h2 data-lang-key="landing_cta_title">Hoziroq boshlang</h2>
+          <p data-lang-key="landing_cta_subtitle">Valyuta kurslarini kuzatish va moliyaviy xatarlarni boshqarish uchun platformamizga qo'shiling</p>
+          <div class="cta-buttons">
+            <a href="#" class="btn btn-large" id="loginBtnFooter" data-lang-key="nav_login">Kirish</a>
+            <a href="#" class="btn btn-large btn-primary" id="registerBtnFooter" data-lang-key="register_link">Ro'yxatdan o'tish</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="landing-footer">
+      <div class="landing-container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <i class="fas fa-chart-line"></i>
+            <h2>ValyutaXavf</h2>
+            <p data-lang-key="footer_copyright">&copy; 2025 Valyuta Xatar Boshqaruvi MVP</p>
+          </div>
+
+          <div class="footer-links">
+            <div class="footer-links-column">
+              <h3 data-lang-key="footer_platform">Platforma</h3>
+              <ul>
+                <li><a href="#features" data-lang-key="footer_features">Imkoniyatlar</a></li>
+                <li><a href="#" data-lang-key="footer_how_it_works">Qanday ishlaydi</a></li>
+                <li><a href="#" data-lang-key="footer_pricing">Narxlar</a></li>
+                <li><a href="#" data-lang-key="footer_faq">Ko'p so'raladigan savollar</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-links-column">
+              <h3 data-lang-key="footer_company">Kompaniya</h3>
+              <ul>
+                <li><a href="#" data-lang-key="footer_about">Biz haqimizda</a></li>
+                <li><a href="#" data-lang-key="footer_careers">Karyera</a></li>
+                <li><a href="#" data-lang-key="footer_blog">Blog</a></li>
+                <li><a href="#" data-lang-key="footer_contact">Bog'lanish</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-links-column">
+              <h3 data-lang-key="footer_legal">Huquqiy</h3>
+              <ul>
+                <li><a href="#" data-lang-key="footer_terms">Foydalanish shartlari</a></li>
+                <li><a href="#" data-lang-key="footer_privacy">Maxfiylik siyosati</a></li>
+                <li><a href="#" data-lang-key="footer_cookies">Cookies siyosati</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-social">
+            <h3 data-lang-key="footer_follow_us">Bizni kuzating</h3>
+            <div class="social-links">
+              <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p>
+              <span data-lang-key="footer_data_source">Ma'lumotlar:</span>
+              <a href="https://www.exchangerate-api.com" target="_blank"
+                ><i class="fas fa-database"></i> ExchangeRate-API</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/lang.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/landing.js"></script>
+  </body>
+</html>
